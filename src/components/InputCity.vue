@@ -20,19 +20,14 @@ let enableEdit = () => {
 
 const select = () => {
     editState.value = false
-    // emit("choiseCity", "Москва")
 }
 
-function updateCity(newCity) {
-    city.value = newCity
-}
-</script> 7.8. v-model .mp4
+</script>
 <template>
     <div class="choise-city-wrapper">
-         {{ city }}
+        {{ city }}
         <div class="choise-city" v-show="editState">
-            <Input @update:value="updateCity" :value="city" type="text" class="choise-city__input" placeholder="Введите город!"
-                name="city" />
+            <Input v-model="city" type="text" class="choise-city__input" placeholder="Введите город!" name="city" />
             <Button @click="select()">
                 Сохранить
             </Button>
