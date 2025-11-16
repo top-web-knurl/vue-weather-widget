@@ -1,0 +1,25 @@
+{
+  "name": "vue-app-test",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "vue": "^3.5.21"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.1",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.36.0",
+    "eslint-plugin-vue": "^10.5.0",
+    "postcss": "^8.5.6",
+    "postcss-nesting": "^13.0.2",
+    "sass": "^1.93.2",
+    "vite": "^7.1.7"
+  }
+}
