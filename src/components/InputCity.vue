@@ -27,7 +27,12 @@ const select = () => {
     <div class="choise-city-wrapper">
         {{ city }}
         <div class="choise-city" v-show="editState">
-            <Input v-model="city" type="text" class="choise-city__input" placeholder="Введите город!" name="city" />
+            <Input 
+            v-model="city"  
+            type="text" 
+            class="choise-city__input" 
+            laceholder="Введите город!" 
+            name="city" />
             <Button @click="select()">
                 Сохранить
             </Button>

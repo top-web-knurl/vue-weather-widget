@@ -1,9 +1,12 @@
 <script setup>
-const model = defineModel()
+const data = defineModel({
+    type: String,
+    required: true,
+})
 </script>
 
 <template>
-    <input v-model="model">
+    <input v-model="data">
 </template>
 
 <style lang="scss" scoped></style>
